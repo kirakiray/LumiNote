@@ -1,3 +1,8 @@
+html {
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+}
+
 .theme-light-mode {
   --pui-theme: light;
   --pui-real-theme: light;
@@ -25,6 +30,7 @@
 @media (prefers-color-scheme: light) {
   html {
     --pui-theme: auto;
+    --pui-real-theme: light;
     --md-sys-color-primary: var(--md-ref-palette-primary40);
     --md-sys-color-on-primary: var(--md-ref-palette-primary100);
     --md-sys-color-primary-container: var(--md-ref-palette-primary90);
@@ -73,6 +79,7 @@
 @media (prefers-color-scheme: dark) {
   html {
     --pui-theme: auto;
+    --pui-real-theme: dark;
     --md-sys-color-primary: var(--md-ref-palette-primary80);
     --md-sys-color-on-primary: var(--md-ref-palette-primary20);
     --md-sys-color-primary-container: var(--md-ref-palette-primary30);
