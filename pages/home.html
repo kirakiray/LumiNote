@@ -1,5 +1,6 @@
 <template page>
   <l-m src="../comps/o-punch/o-punch.html"></l-m>
+
   <style>
     :host {
       display: block;
@@ -40,6 +41,9 @@
       return {
         data: {},
         proto: {},
+        attached() {
+          $("title").text = "Home";
+        },
       };
     };
   </script>
